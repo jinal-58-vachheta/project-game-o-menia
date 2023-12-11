@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Hunting</title>
+    <!-- CCS link -->
+    <link rel="stylesheet" href="css.css">
+
+    <!-- JS link -->
+    <script src="js.js"></script>
+</head>
+
+<body> 
+
+  
+    <div class="time_and_score"> 
+        <!-- it will display score-->
+        <div id="score">score:<span id="current_score">0</span></div>
+       <!-- it will display timer-->
+       <div id="scoreTimer">Time Counter : <span id="currentTimer"> </span> s</div>
+    </div>
+
+    <div class="window">
+        <!-- birds -->
+        <img id="b1" class="bird" onclick="hunt(this)" src="bird2.gif">
+        <img id="b2" class="bird" onclick="hunt(this)" src="bird2.gif">
+        <img id="b3" class="bird" onclick="hunt(this)" src="bird1.gif">
+        <img id="b4" class="bird" onclick="hunt(this)" src="bird1.gif">
+        <img id="b5" class="bird" onclick="hunt(this)" src="bird3.gif">  
+        <img id="b6" class="bird" onclick="hunt(this)" src="bird5.gif">
+
+        <audio id="shoot">
+          
+            <source src="assets_fire3.mp3" type="audio/mpeg">
+          </audio>
+          <audio id="miss_shoot" >
+            <source src="miss_shot.mp3" type="audio/mpeg">
+          </audio>
+        
+   </div>
+
+   
+    <!-- The modal -->
+<div id="gameOverModal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <p >Total Score is: <span id="finalScore"></span></p>
+    <button id="restartButton" >Restart</button>
+  </div>
+</div>
+
+
+   </div>
+  
+
+</body>
+</html>     
